@@ -1,8 +1,3 @@
-resource "local_file" "key" {
-    content     = var.auth
-    filename = "${path.module}/key.json"
-}
-
 resource "google_container_cluster" "primary" {
   name     = "my-gke-cluster"
   location = "us-central1"
