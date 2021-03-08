@@ -1,6 +1,5 @@
-resource "google_service_account" "project" {
-  account_id   = "service-account-id"
-  display_name = "Service Account"
+data "google_service_account" "myaccount" {
+  account_id = var.account_id
 }
 
 resource "google_container_cluster" "primary" {
