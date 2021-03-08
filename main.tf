@@ -1,3 +1,8 @@
+resource "local_file" "key" {
+    content     = var.auth
+    filename = "${path.module}/key.json"
+}
+
 resource "google_service_account" "default" {
   account_id   = var.serviceaccountid
   display_name = var.serviceaccountname
