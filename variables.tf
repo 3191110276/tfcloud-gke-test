@@ -1,7 +1,3 @@
-variable "auth" {
-  type    = string
-}
-
 variable "project" {
   type    = string
 }
